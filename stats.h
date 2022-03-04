@@ -5,10 +5,10 @@ extern int emailAlertCallCount;
 extern int ledAlertCallCount;
 
 typedef struct {
-  int avg;
+  int average;
   int min;
   int max;
-}stats;
+}Stats;
 struct Stats compute_statistics(const float* numberset, int setlength);
 
 typedef void (*alerter_funcptr)();
